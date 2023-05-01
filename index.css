@@ -1,0 +1,71 @@
+:root {
+  --dark: rgb(4, 4, 15);
+}
+
+.App{
+    background-color: var(--dark);
+    width: auto;
+    height: 100vh;
+    border: 5px solid gold;
+  }
+  #con {
+    background-color: var(--dark);
+   margin: auto;
+   border: 5px solid var(--dark);
+   height: 450px;
+   max-height: 450px;
+   width: 120vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+  }
+  .bxs{
+  border: 1px solid var(--dark);
+  height: 150px;
+  text-align: center;
+  color: lime;
+  font-size: 30px;
+  }
+  #breakdiv{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #sessiondiv{
+    grid-column:  3;
+    grid-row: 2;
+  }
+  #timer{
+    text-align: center;
+    border: 5px solid;
+    border-radius: 15%;
+    color: lime;
+    grid-column: 2;
+    grid-row: 2;
+    box-shadow: 1px 1px 10px lime;
+  }
+  #time-left{
+    font-size: 100px;
+    text-shadow: 1px 1px 4px lime;
+    color: lime;
+  }
+  .incbtns{
+  background-color: lightgreen;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 15px;
+  cursor: pointer;
+  }
+  .decbtns{
+    background-color: red;
+    height:  5vh;
+    width: 5vh;
+    border-radius: 15px;
+    cursor: pointer;
+    }
+  #start_stop:hover{
+    background-color: red;
+  }
+
+  #reset:hover{
+    background-color: blue;
+  }
